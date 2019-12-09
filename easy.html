@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            border: groove red 10px;
+        }
+        nav{ 
+        text-align: left;
+            width: 100px;
+            
+        }
+        nav a { 
+        display: block;
+          
+        }
+    </style>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <link rel= "stylesheet" type= "text/css" href = "style.css">
+    </head>
+    <body>
+    <header> <h1>Easy Mode</h1>
+        </header>
+        <section>
+            <nav><h3>Navigation:</h3>
+                
+            <a href="index.html">Start Screen</a>
+          
+            
+                </nav>
+            <article> 
+                
+                
+            </article>
+        </section>
+        <footer></footer>
+    </body>
+    <script type="text/javascript">
+        var x = 350
+        var y = 275
+        var dx = 0
+        var dy = 0
+      var ax = 0
+      var ay = 0
+        function setup() {    
+    createCanvas(750,600).parent('sketch-holder');
+    //pause game (waits until login)
+   
+}
+        
+        function draw() {
+    background("#5D5555")
+            fill("#D53A3A")
+ellipse (x,y,50,50)
+            if (frameCount % 45== 0) {     
+    dx = random (-1.5,1.5);
+            dy= random (-1.5,1.5);             
+ ax = random (-.018,.018);
+            ay= random (-.018,.018);
+        }
+            x = x +dx;
+            y = y +dy;
+            dx = dx +ax;
+            dy = dy +ay;
+        }
+        
+        
+    </script>
+       <div id="sketch-holder">
+      <!-- Our sketch will go here! -->
+    </div>
+    
+    <footer><h5>The objective is this easy mode is for beginners and noive players who may lack skills in aiming. </h5></footer>
+</html>
