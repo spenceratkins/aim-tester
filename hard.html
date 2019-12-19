@@ -63,7 +63,7 @@
             fill("white")
             text ("score:" + score, 10, 10) 
             fill ("#D53A3A")
-            ellipse (x,y,50,50)
+            ellipse (x,y,17,17)
             fill("white")
             text (x -10,y)
                 if (x + 40 > mouseX && y + 30 > mouseY) {
@@ -73,17 +73,17 @@
                 }
             
             if (frameCount % 45== 0) {     
-    dx = random (-1.5,1.5);
-            dy= random (-1.5,1.5);             
- ax = random (-.018,.018);
-            ay= random (-.018,.018);
+    dx = random (-2,2);
+            dy= random (-2,2);             
+ ax = random (-.035,.035);
+            ay= random (-.035,.035);
         }
             x = x +dx;
             y = y +dy;
             dx = dx +ax;
             dy = dy +ay;
-             y = constrain(y , 25, height - 25);
-             x = constrain(x , 25 , width - 25);
+             y = constrain(y , 9, height - 9);
+             x = constrain(x , 9 , width - 9);
             
             
             
@@ -94,5 +94,5 @@
       <!-- Our sketch will go here! -->
     </div>
     
-    <footer><h5>The objective is this easy mode is for beginners and noive players who may lack skills in aiming. </h5></footer>
+    <footer><h5>The objective is this hard mode is for professional players who already have stellar aim and are looking for a real challange. </h5></footer>
 </html>
