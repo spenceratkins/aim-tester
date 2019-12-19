@@ -63,7 +63,7 @@
             fill("white")
             text ("score:" + score, 10, 10) 
             fill ("#D53A3A")
-            ellipse (x,y,17,17)
+            ellipse (x,y,12,12)
             fill("white")
             text (x -10,y)
                 if (x + 40 > mouseX && y + 30 > mouseY) {
@@ -82,8 +82,8 @@
             y = y +dy;
             dx = dx +ax;
             dy = dy +ay;
-             y = constrain(y , 9, height - 9);
-             x = constrain(x , 9 , width - 9);
+             y = constrain(y , 6, height - 6);
+             x = constrain(x , 6 , width - 6);
             
             
             
